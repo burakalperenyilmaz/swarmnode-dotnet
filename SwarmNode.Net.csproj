@@ -4,7 +4,29 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>SwarmNode.Net.Client</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Burak Alperen Yılmaz</Authors>
+    <Company>SwarmNode AI</Company>
+    <Description>A .NET client for SwarmNode API integration</Description>
+    <PackageTags>SwarmNode AI Client</PackageTags>
+    <RepositoryUrl>https://github.com/burakalperenyilmaz/swarmnode-dotnet</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://swarmnode.ai</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon.png" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
